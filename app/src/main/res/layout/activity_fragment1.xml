@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+<!--
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/logo" />
+-->
+       <TextView
+           android:id="@+id/label"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/colorPrimary"
+           android:gravity="center_horizontal"
+           android:text="Enter your purchase information"
+           android:textAppearance="@style/TextAppearance.AppCompat.Large"
+           android:textColor="@android:color/white"
+           android:layout_below="@+id/imageView"
+           >
+
+       </TextView>
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:text="What is the price of your car?"
+           android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+           android:layout_below="@id/label"></TextView>
+
+       <EditText
+           android:id="@+id/et_price"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="numberDecimal"
+           android:hint="e.g $ 40,000"
+           android:layout_below="@id/textView1"></EditText>
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/et_price"
+           android:text="What is your cash downpayment?"
+           android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle">
+
+       </TextView>
+
+       <EditText
+           android:id="@+id/et_donwpayment"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="numberDecimal"
+           android:hint="e.g $ 5000"
+           android:layout_below="@id/textView2"></EditText>
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/radioGroup"
+           android:layout_below="@id/et_donwpayment">
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/rb_2year"
+               android:text=" 2 YEARS"
+               android:layout_gravity="center_horizontal">
+           </RadioButton>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=" 3 YEARS"
+               android:id="@+id/rb_3year"
+               android:layout_gravity="center_horizontal">
+           </RadioButton>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=" 4 YEARS"
+               android:id="@+id/rb_4year"
+               android:layout_gravity="center_horizontal">
+           </RadioButton>
+       </RadioGroup>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/radioGroup"
+           android:layout_marginTop="20dp"
+           android:text="Choose your loan term"
+           android:id="@+id/textView3"
+           android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+           android:layout_centerHorizontal="true"></TextView>
+
+
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan Report"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

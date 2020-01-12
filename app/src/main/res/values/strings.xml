@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AutomotiveCalculator_Fragment</string>
+    <string name="note">1.  Loan information is made available by Tom\'s Car Dealership.
+    \n 2. A sales tax rate of 7% is required in the state of California.
+    \n 3. Vehicles are financial at an annual interest rate of 9%.</string>
+</resources>
